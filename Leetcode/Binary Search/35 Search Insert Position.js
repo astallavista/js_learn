@@ -11,7 +11,7 @@ let searchInsert = function(nums, target) {
     while (lo <= hi) {
         let mid = lo + Math.floor((hi - lo) / 2)
         if(nums[mid] == target) {
-            return [mid]
+            return mid
         } else if (nums[mid] > target) {
             lo = mid + 1
         } else if (nums[mid] < target) {
